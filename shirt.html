@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shirt</title>
+    <style>
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        object-fit: cover;
+      }
+      #wrapper {
+        font-weight: bold;
+        /* border: 1px solid black; */
+        overflow: hidden; /* will contain if #first is longer than #second */
+      }
+      #first {
+        width: 400px;
+        float: left; /* add this */
+        /* border: 1px solid red; */
+      }
+      #home_button {
+        margin-top: 300px;
+      }
+      #right {
+        /* border: 1px solid green; */
+        float: right;
+        padding-right: 100px;
+        padding-top: 20px;
+        margin-right: 50px;
+        overflow: hidden; /* if you don't want #second to wrap below #first */
+        text-align: right;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nice summer shirt</h1>
+    <div id="wrapper">
+      <div id="first">
+        <div>
+          <p>Shirt</p>
+          <p id="home_button"><a href="index.html">Home</a></p>
+        </div>
+      </div>
+      <div id="right">
+        <img src="images/shirt.jpg" alt="A Photo of shirt" />
+        <p>56€</p>
+      </div>
+    </div>
+  </body>
+</html>
