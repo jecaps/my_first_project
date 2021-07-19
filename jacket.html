@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacket</title>
     <style>
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        object-fit: cover;
+      }
       #wrapper {
+        font-weight: bold;
         /* border: 1px solid black; */
         overflow: hidden; /* will contain if #first is longer than #second */
       }
@@ -15,11 +22,13 @@
         float: left; /* add this */
         /* border: 1px solid red; */
       }
+      #home_button {
+        margin-top: 300px;
+      }
       #right {
         /* border: 1px solid green; */
         float: right;
-        padding-right: 150px;
-        margin-top: 20px;
+        padding-right: 100px;
         padding-top: 20px;
         margin-right: 50px;
         overflow: hidden; /* if you don't want #second to wrap below #first */
@@ -30,13 +39,14 @@
   </head>
   <body>
     <h1>Nice summer jacket</h1>
-    <div class="big_container" id="wrapper">
-      <div class="left_container" id="first">
-        <div class="name_container">
+    <div id="wrapper">
+      <div id="first">
+        <div>
           <p>Jacket</p>
+          <p id="home_button"><a href="index.html">Home</a></p>
         </div>
       </div>
-      <div class="right_container" id="right">
+      <div id="right">
         <img src="images/jacket.jpg" alt="A Photo Jacket" />
         <p>150€</p>
       </div>
